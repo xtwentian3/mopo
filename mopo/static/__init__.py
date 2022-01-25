@@ -11,7 +11,8 @@ def import_fns(path, file, fns_name='StaticFns'):
 	fns = getattr(module, fns_name)
 	return fns
 
-cwd = 'mopo/static'
+# cwd = 'mopo/static'
+cwd = '.'
 files = os.listdir(cwd)
 ## remove __init__.py
 files = filter(lambda x: '__' not in x and x[0] != '.', files)
